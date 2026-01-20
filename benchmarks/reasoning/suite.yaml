@@ -1,0 +1,28 @@
+name: "Reasoning Suite"
+description: "Comprehensive reasoning and problem-solving tasks"
+version: "1.0.0"
+
+tasks:
+  - file: "simple_math.yaml"
+    weight: 1.0
+  - file: "word_problem.yaml"
+    weight: 1.5
+
+config:
+  parallel_execution: false
+  max_concurrency: 3
+  max_retries: 1
+  timeout_per_task: 300
+  save_traces: true
+  stop_on_failure: false
+
+reporting:
+  aggregate_metrics: true
+  generate_html: true
+  save_traces: true
+  output_format: "json"
+
+metadata:
+  category: "reasoning"
+  created_at: "2026-01-17"
+  tags: ["reasoning", "math", "problem-solving"]

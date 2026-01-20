@@ -1,0 +1,35 @@
+metadata:
+  name: "simple_math"
+  description: "Test agent's ability to solve basic math problems"
+  tags: ["math", "reasoning", "basic"]
+  difficulty: "easy"
+  version: "1.0.0"
+  author: "AgentEval Team"
+
+task:
+  type: "reasoning"
+
+  instructions: |
+    Solve the following math problem:
+    What is 15 multiplied by 7?
+
+    Please provide just the numerical answer.
+
+  success_criteria:
+    - type: "output_contains"
+      value: "105"
+      description: "Output should contain the correct answer"
+      required: true
+
+  validation:
+    method: "rule_based"
+    strict: false
+
+  expected_output:
+    answer: 105
+
+metrics:
+  enabled:
+    - "task_success_rate"
+    - "execution_time"
+    - "token_usage"

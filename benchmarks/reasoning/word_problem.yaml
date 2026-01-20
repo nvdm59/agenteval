@@ -1,0 +1,35 @@
+metadata:
+  name: "word_problem"
+  description: "Test agent's ability to solve word problems"
+  tags: ["math", "reasoning", "word-problem"]
+  difficulty: "medium"
+  version: "1.0.0"
+
+task:
+  type: "reasoning"
+
+  instructions: |
+    Sarah has 12 apples. She gives 3 apples to her friend and buys 5 more apples from the store.
+    How many apples does Sarah have now?
+
+    Please show your reasoning and provide the final answer.
+
+  success_criteria:
+    - type: "output_contains"
+      value: "14"
+      description: "Output should contain the correct answer (14)"
+      required: true
+
+  validation:
+    method: "rule_based"
+
+  expected_output:
+    answer: 14
+    reasoning: "12 - 3 + 5 = 14"
+
+metrics:
+  enabled:
+    - "task_success_rate"
+    - "execution_time"
+    - "token_usage"
+    - "instruction_following"
