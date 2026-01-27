@@ -349,27 +349,7 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Citation
-
-If you use AgentEval in your research, please cite:
-
-```bibtex
-@software{agenteval2026,
-  title = {AgentEval: Evaluation Framework for LLM-based Agents},
-  author = {AgentEval Team},
-  year = {2026},
-  url = {https://github.com/agenteval/agenteval}
-}
-```
-
-## Acknowledgments
-
-- Built with [Anthropic Claude](https://anthropic.com)
-- Inspired by evaluation frameworks in the LLM agent community
-- Thanks to all contributors
-
 ## Support
 
 - GitHub Issues: [https://github.com/agenteval/agenteval/issues](https://github.com/agenteval/agenteval/issues)
 - Documentation: [https://agenteval.readthedocs.io](https://agenteval.readthedocs.io)
-- Discord: [Join our community](https://discord.gg/agenteval)
